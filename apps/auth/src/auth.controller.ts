@@ -11,8 +11,6 @@ export class AuthController {
     const channel = context.getChannelRef();
     const originalMessage = context.getMessage();
     channel.ack(originalMessage);
-    console.log(channel, originalMessage);
-
     return { user: 'USER' };
   }
 }
